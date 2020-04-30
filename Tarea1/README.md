@@ -1,7 +1,7 @@
 # Branch Predictor
 
 Programa en Python (Python 3) que simula varios predictores de saltos.
-Los [saltos](https://www.google.com "Ingresar para descargar el archivo con los saltos.") son el resultado de la ejecución de gcc (colección de compiladores de GNU), que es parte de la suite SPECint2000. 
+Los [saltos](https://drive.google.com/file/d/1SX7RqywL641EwW8miW6rta1quLPN07cZ/view "Ingresar para descargar el archivo con los saltos.") son el resultado de la ejecución de gcc (colección de compiladores de GNU), que es parte de la suite SPECint2000. 
 
 Los predictores de saltos posibles por simular:
 * Predictor bimodal
@@ -9,19 +9,10 @@ Los predictores de saltos posibles por simular:
 * Predictor con historia global
 * Predictor por torneo
 
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-
 ## Usage
 
-```python
-import foobar
+En un directorio con [branch_predictor.py](branch_predictor.py) se corre el siguiente comando:
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+gunzip -c branch-trace-gcc.trace.gz | python3 branch_predictor.py  -s < # > -bp < # > -gh < # > -ph < # > -o < # >
+```
