@@ -30,10 +30,10 @@ Dependiendo del alias que le tenga a python3.
 En ambos casos cada argumento corresponde a:
 * Tamaño de la tabla BTH (-s)
 * Tipo de predicción (-bp)
-   0. Bimodal
-   1. Pshare
-   2. Gshare
-   3. Tournament
+   * 0: Bimodal
+   * 1: Pshare
+   * 2: Gshare
+   * 3: Tournament
 * Tamaño del registro de predicción global (-gh)
 * Tamaño de los registros de historia privada (-ph)
 * Salida de la simulación (-o)
