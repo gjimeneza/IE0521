@@ -27,7 +27,13 @@ gunzip -c branch-trace-gcc.trace.gz | python branch_predictor.py  -s < # > -bp <
 ```
 Dependiendo del alias que le tenga a python3.
 
-En ambos casos cada argumento corresponde a:
+Si se quisiera sólo correr las primeras 200 entradas, por ejemplo:
+
+```bash
+gunzip -c branch-trace-gcc.trace.gz | head -200 | python3 branch_predictor.py  -s < # > -bp < # > -gh < # > -ph < # > -o < # >
+```
+
+En todos los casos cada argumento corresponde a:
 * Tamaño de la tabla BTH (-s)
 * Tipo de predicción (-bp)
    * 0: Bimodal
